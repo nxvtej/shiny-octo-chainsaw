@@ -6,7 +6,7 @@ import { HomeIcon, NotebookIcon } from "lucide-react";
 export const DATA = {
 	name: "Navdeep",
 	initials: "Jr",
-	url: "https://100xnavi.com",
+	url: "https://portfolio.100xnavi.com",
 	location: "HR, IN",
 	locationLink: "https://www.google.com/maps/place/india",
 	description:
@@ -36,21 +36,21 @@ export const DATA = {
 		social: {
 			GitHub: {
 				name: "GitHub",
-				url: "https://dub.sh/dillion-github",
+				url: "https://github.com/nxvtej",
 				icon: Icons.github,
 
 				navbar: true,
 			},
 			LinkedIn: {
 				name: "LinkedIn",
-				url: "https://dub.sh/dillion-linkedin",
+				url: "https://www.linkedin.com/in/nxvdeep/",
 				icon: Icons.linkedin,
 
 				navbar: true,
 			},
 			X: {
 				name: "X",
-				url: "https://dub.sh/dillion-twitter",
+				url: "https://x.com/nxvdeeep",
 				icon: Icons.x,
 
 				navbar: true,
