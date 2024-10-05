@@ -1,17 +1,12 @@
 <!-- @format -->
 
-<div align="center">
-<img alt="Portfolio" src="https://github.com/nxvtej/portfolio/assets/16860528/57ffca81-3f0a-4425-b31d-094f61725455" width="90%">
-</div>
-
 # Portfolio [![Deploy with Vercel](https://vercel.com/button)]()
 
-Built with next.js, [shadcn/ui](https://ui.shadcn.com/), and [magic ui](https://magicui.design/), deployed on Vercel.
+Built with next.js, [shadcn/ui](https://ui.shadcn.com/), [aceternity/ui](https://ui.aceternity.com/) and [magic ui](https://magicui.design/), deployed on Vercel.
 
 # Features
 
-- Setup only takes a few minutes by editing the [single config file](./src/data/resume.tsx)
-- Built using Next.js 14, React, Typescript, Shadcn/UI, TailwindCSS, Framer Motion, Magic UI
+- Built using Next.js 14, React, Typescript, Shadcn/UI, Aceternity, TailwindCSS, Framer Motion, Magic UI
 - Includes a blog
 - Responsive for different devices
 - Optimized for Next.js and Vercel
