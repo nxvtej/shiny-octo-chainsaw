@@ -146,6 +146,7 @@ export default function Page() {
 					</div>
 				</div>
 			</section>
+
 			<section id='projects'>
 				<div className='space-y-12 w-full py-12'>
 					<BlurFade delay={BLUR_FADE_DELAY * 11}>
@@ -186,6 +187,7 @@ export default function Page() {
 					</div>
 				</div>
 			</section>
+
 			<section id='education'>
 				<div className='flex min-h-0 flex-col gap-y-3'>
 					<BlurFade delay={BLUR_FADE_DELAY * 7}>
