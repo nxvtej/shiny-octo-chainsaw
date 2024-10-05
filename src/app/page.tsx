@@ -10,7 +10,7 @@ import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
-import { AlarmClock, LocateFixed, Paperclip } from "lucide-react";
+import { AlarmClock, LocateFixed, Mail, Paperclip } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import Markdown from "react-markdown";
@@ -72,6 +72,15 @@ export default function Page() {
 											className='hidden md:flex cursor-pointer'>
 											<Paperclip className='size-4 mr-1' />
 											Resume
+										</Badge>
+									</Link>
+									<Link href={DATA.email}>
+										<Badge
+											variant='secondary'
+											className='hidden md:flex cursor-pointer'>
+											<Mail className='size-4 mr-1' />
+											{/* nxvtej@gmail.com */}
+											nxvtej
 										</Badge>
 									</Link>
 								</div>
@@ -248,17 +257,16 @@ export default function Page() {
 								Contact
 							</div>
 							<h2 className='text-3xl font-bold tracking-tighter sm:text-5xl'>
-								Get in Touch
+								Let's Talk
 							</h2>
 							<p className='mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed'>
-								Want to chat? Just shoot me a dm{" "}
+								Just shoot me a dm{" "}
 								<Link
 									href={DATA.contact.social.X.url}
 									className='text-blue-500 hover:underline'>
 									with a direct question on twitter
 								</Link>{" "}
-								and I&apos;ll respond whenever I can. I will ignore all
-								soliciting.
+								.
 							</p>
 						</div>
 					</BlurFade>

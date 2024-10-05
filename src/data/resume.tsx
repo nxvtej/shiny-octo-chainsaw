@@ -31,6 +31,8 @@ export const DATA = {
 		{ href: "/", icon: HomeIcon, label: "Home" },
 		{ href: "/blog", icon: NotebookIcon, label: "Blog" },
 	],
+	email:
+		"mailto:nxvtej@gmail.com?subject=Contact%20via%20Portfolio&body=Hello,%20I%20would%20like%20to%20connect%20with%20you.",
 	contact: {
 		email: "nxvtej@gmail.com",
 		tel: "+917988672006",
