@@ -5,7 +5,7 @@ import { HomeIcon, NotebookIcon } from "lucide-react";
 
 export const DATA = {
 	name: "Navdeep",
-	initials: "Jr",
+	initials: "navi",
 	url: "https://portfolio.100xnavi.com",
 	location: "HR, IN",
 	locationLink: "https://www.google.com/maps/place/india",
