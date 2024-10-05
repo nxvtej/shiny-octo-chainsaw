@@ -1,6 +1,13 @@
-/** @type {import('next').NextConfig} */
+/**
+ * @format
+ * @type {import('next').NextConfig}
+ */
+
 const nextConfig = {
-  reactStrictMode: true,
+	reactStrictMode: true,
+	images: {
+		domains: ["i.postimg.cc"], // Add the PostImage domain here
+	},
 };
 
 export default nextConfig;
