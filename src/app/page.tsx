@@ -1,5 +1,6 @@
 /** @format */
-
+"use client";
+import { Lens } from "@/components/aceternityui/lens";
 import { Spotlight } from "@/components/aceternityui/spotlight";
 import { HackathonCard } from "@/components/hackathon-card";
 import BlurFade from "@/components/magicui/blur-fade";
@@ -9,12 +10,25 @@ import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
+import { AlarmClock, LocateFixed, Paperclip } from "lucide-react";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import Markdown from "react-markdown";
-
 const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
+	const [hovering, setHovering] = useState(false);
+	const [currentTime, setCurrentTime] = useState(new Date());
+
+	useEffect(() => {
+		const interval = setInterval(() => {
+			setCurrentTime(new Date());
+		}, 1000);
+
+		return () => {
+			clearInterval(interval);
+		};
+	}, []);
 	return (
 		<main className='flex flex-col min-h-[100dvh] space-y-10'>
 			<Spotlight
@@ -36,12 +50,40 @@ export default function Page() {
 								delay={BLUR_FADE_DELAY}
 								text={DATA.description}
 							/>
+							<BlurFade delay={BLUR_FADE_DELAY}>
+								<div className='flex flex-wrap gap-1 h-full w-full'>
+									<Badge variant='secondary' className='cursor-pointer'>
+										<LocateFixed className='size-4 mr-1' />
+										{DATA.location}
+									</Badge>
+									<Badge variant='secondary' className='cursor-pointer'>
+										<AlarmClock className='size-4 mr-1' />
+										{currentTime.toLocaleTimeString(DATA.localCode, {
+											timeZone: DATA.timeZone,
+											hour: "2-digit",
+											minute: "2-digit",
+											second: "2-digit",
+											hour12: true,
+										})}
+									</Badge>
+									<Link href={DATA.resume}>
+										<Badge
+											variant='secondary'
+											className='hidden md:flex cursor-pointer'>
+											<Paperclip className='size-4 mr-1' />
+											Resume
+										</Badge>
+									</Link>
+								</div>
+							</BlurFade>
 						</div>
 						<BlurFade delay={BLUR_FADE_DELAY}>
-							<Avatar className='size-28 border'>
-								<AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
-								<AvatarFallback>{DATA.initials}</AvatarFallback>
-							</Avatar>
+							<Lens hovering={hovering} setHovering={setHovering}>
+								<Avatar className='size-28 border'>
+									<AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
+									<AvatarFallback>{DATA.initials}</AvatarFallback>
+								</Avatar>
+							</Lens>
 						</BlurFade>
 					</div>
 				</div>

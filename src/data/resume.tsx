@@ -7,8 +7,11 @@ export const DATA = {
 	name: "Navdeep",
 	initials: "navi",
 	url: "https://portfolio.100xnavi.com",
-	location: "HR, IN",
+	location: "Haryana, India",
 	locationLink: "https://www.google.com/maps/place/india",
+	timeZone: "Asia/Kolkata",
+	localCode: "en-IN",
+	resume: "portfolio.100xnavi.com0",
 	description: "21-year-old tech enthusiast, seeking an SDE position.",
 	summary:
 		"A self-motivated final-year student with coding expertise in C/C++, JavaScript, TypeScript, ReactJs, NodeJs, and SQL. Proficient in working with DevOps, Docker, AWS, and GitHub Actions. Skilled problem-solver with 450+ LeetCode solutions and experience in cutting-edge technologies.",
