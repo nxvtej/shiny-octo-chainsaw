@@ -62,19 +62,18 @@ export default function Page() {
 											hour12: true,
 										})}
 									</Badge>
+
+									<Badge variant='secondary' className=' cursor-pointer'>
+										<LocateFixed className='size-4 mr-1' />
+										{DATA.location}
+									</Badge>
+
 									<Link href={DATA.resume}>
-										<Badge
-											variant='secondary'
-											className='hidden md:flex cursor-pointer'>
+										<Badge variant='secondary' className='cursor-pointer'>
 											<Paperclip className='size-4 mr-1' />
 											Resume
 										</Badge>
 									</Link>
-									{/* 
-									<Badge variant='secondary' className='cursor-pointer'>
-										<LocateFixed className='size-4 mr-1' />
-										{DATA.location}
-									</Badge> */}
 
 									<Link href={DATA.email}>
 										<Badge
