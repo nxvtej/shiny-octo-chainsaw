@@ -53,10 +53,6 @@ export default function Page() {
 							<BlurFade delay={BLUR_FADE_DELAY}>
 								<div className='flex flex-wrap gap-1 h-full w-full'>
 									<Badge variant='secondary' className='cursor-pointer'>
-										<LocateFixed className='size-4 mr-1' />
-										{DATA.location}
-									</Badge>
-									<Badge variant='secondary' className='cursor-pointer'>
 										<AlarmClock className='size-4 mr-1' />
 										{currentTime.toLocaleTimeString(DATA.localCode, {
 											timeZone: DATA.timeZone,
@@ -74,13 +70,18 @@ export default function Page() {
 											Resume
 										</Badge>
 									</Link>
+									<Badge variant='secondary' className='cursor-pointer'>
+										<LocateFixed className='size-4 mr-1' />
+										{DATA.location}
+									</Badge>
+
 									<Link href={DATA.email}>
 										<Badge
 											variant='secondary'
 											className='hidden md:flex cursor-pointer'>
 											<Mail className='size-4 mr-1' />
 											{/* nxvtej@gmail.com */}
-											nxvtej
+											Nxvtej
 										</Badge>
 									</Link>
 								</div>
