@@ -70,10 +70,11 @@ export default function Page() {
 											Resume
 										</Badge>
 									</Link>
+									{/* 
 									<Badge variant='secondary' className='cursor-pointer'>
 										<LocateFixed className='size-4 mr-1' />
 										{DATA.location}
-									</Badge>
+									</Badge> */}
 
 									<Link href={DATA.email}>
 										<Badge
