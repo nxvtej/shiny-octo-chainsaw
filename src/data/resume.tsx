@@ -201,33 +201,32 @@ export const DATA = {
 			// video: "https://cdn.llm.report/openai-demo.mp4",
 		},
 		{
-			title: "Automatic Chat",
-			href: "https://automatic.chat",
-			dates: "April 2023 - March 2024",
+			title: "Youtube Crawler",
+			href: "https://crawler.100xnavi.com/",
+			dates: "Oct 2024 - Oct 2024",
 			active: true,
 			description:
-				"Developed an AI Customer Support Chatbot which automatically responds to customer support tickets using the latest GPT models.",
+				"Developed a youtube playlist crawler using crawlee playwright api for content creator to visulize their video performance.",
 			technologies: [
 				"Next.js",
+				"PlayWright",
 				"Typescript",
-				"PostgreSQL",
-				"Prisma",
 				"TailwindCSS",
 				"Shadcn UI",
-				"Magic UI",
-				"Stripe",
-				"Cloudflare Workers",
 			],
 			links: [
 				{
+					type: "Source",
+					href: "https://github.com/nxvtej/crawler-c",
+					icon: <Icons.github className='size-3' />,
+				},
+				{
 					type: "Website",
-					href: "https://automatic.chat",
+					href: "https://crawler.100xnavi.com/",
 					icon: <Icons.globe className='size-3' />,
 				},
 			],
-			image: "",
-			video:
-				"https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
+			image: "https://i.postimg.cc/bJM1qZjL/image.png",
 		},
 	],
 
