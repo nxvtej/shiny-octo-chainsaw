@@ -26,6 +26,7 @@ export const DATA = {
 		"Python",
 		"Postgres",
 		"Docker",
+		"AWS",
 	],
 	navbar: [
 		{ href: "/", icon: HomeIcon, label: "Home" },
@@ -230,11 +231,11 @@ export const DATA = {
 		},
 	],
 
-	hackathons: [
+	certificates: [
 		{
-			title: "Cognizance",
-			dates: "March 15th - 21th, 2024",
-			location: "Uttarakhand, Roorkee",
+			title: "Postman API Fundamentals Student Expert ",
+			dates: "October 9th - 11th, 2024",
+			location: "Postman",
 			description:
 				"Developed a trading algorithm which trades stocks based on averages using pinescript.",
 			image:

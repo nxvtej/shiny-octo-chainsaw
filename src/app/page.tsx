@@ -2,7 +2,7 @@
 "use client";
 import { Lens } from "@/components/aceternityui/lens";
 import { Spotlight } from "@/components/aceternityui/spotlight";
-import { HackathonCard } from "@/components/hackathon-card";
+import { CertificateCard } from "@/components/certificate-card";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ProjectCard } from "@/components/project-card";
@@ -19,8 +19,10 @@ const BLUR_FADE_DELAY = 0.04;
 export default function Page() {
 	const [hovering, setHovering] = useState(false);
 	const [currentTime, setCurrentTime] = useState(new Date());
+	const [hasMounted, setHasMounted] = useState(false);
 
 	useEffect(() => {
+		setHasMounted(true);
 		const interval = setInterval(() => {
 			setCurrentTime(new Date());
 		}, 1000);
@@ -29,6 +31,8 @@ export default function Page() {
 			clearInterval(interval);
 		};
 	}, []);
+
+	if (!hasMounted) return null;
 	return (
 		<main className='flex flex-col min-h-[100dvh] space-y-10'>
 			<Spotlight
@@ -211,22 +215,22 @@ export default function Page() {
 					))}
 				</div>
 			</section>
-			<section id='hackathons'>
+			<section id='certificates'>
 				<div className='space-y-12 w-full py-12'>
 					<BlurFade delay={BLUR_FADE_DELAY * 13}>
 						<div className='flex flex-col items-center justify-center space-y-4 text-center'>
 							<div className='space-y-2'>
 								<div className='inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm'>
-									Hackathons
+									Certificates
 								</div>
 								<h2 className='text-3xl font-bold tracking-tighter sm:text-5xl'>
 									I like building things
 								</h2>
 								<p className='text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed'>
 									During my time in university, I attended{" "}
-									{DATA.hackathons.length}+ hackathons. People from around the
-									country would come together and build incredible things in 2-3
-									days. It was eye-opening to see the endless possibilities
+									{DATA.certificates.length}+ certificates. People from around
+									the country would come together and build incredible things in
+									2-3 days. It was eye-opening to see the endless possibilities
 									brought to life by a group of motivated and passionate
 									individuals.
 								</p>
@@ -235,11 +239,11 @@ export default function Page() {
 					</BlurFade>
 					<BlurFade delay={BLUR_FADE_DELAY * 14}>
 						<ul className='mb-4 ml-4 divide-y divide-dashed border-l'>
-							{DATA.hackathons.map((project, id) => (
+							{DATA.certificates.map((project, id) => (
 								<BlurFade
 									key={project.title + project.dates}
 									delay={BLUR_FADE_DELAY * 15 + id * 0.05}>
-									<HackathonCard
+									<CertificateCard
 										title={project.title}
 										description={project.description}
 										location={project.location}
