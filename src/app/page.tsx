@@ -224,15 +224,12 @@ export default function Page() {
 									Certificates
 								</div>
 								<h2 className='text-3xl font-bold tracking-tighter sm:text-5xl'>
-									I like building things
+									I like expanding my knowledge
 								</h2>
 								<p className='text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed'>
-									During my time in university, I attended{" "}
-									{DATA.certificates.length}+ certificates. People from around
-									the country would come together and build incredible things in
-									2-3 days. It was eye-opening to see the endless possibilities
-									brought to life by a group of motivated and passionate
-									individuals.
+									During my time in university, I actively pursued personal and
+									professional development through various certifications. I
+									aquired {DATA.certificates.length}+ certificates.
 								</p>
 							</div>
 						</div>
@@ -245,8 +242,7 @@ export default function Page() {
 									delay={BLUR_FADE_DELAY * 15 + id * 0.05}>
 									<CertificateCard
 										title={project.title}
-										description={project.description}
-										location={project.location}
+										provider={project.provider}
 										dates={project.dates}
 										image={project.image}
 										links={project.links}
@@ -265,14 +261,20 @@ export default function Page() {
 								Contact
 							</div>
 							<h2 className='text-3xl font-bold tracking-tighter sm:text-5xl'>
-								Let&#39;s Talk
+								Let&#39;s Connect
 							</h2>
 							<p className='mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed'>
 								Just shoot me a dm{" "}
 								<Link
 									href={DATA.contact.social.X.url}
 									className='text-blue-500 hover:underline'>
-									with a direct question on twitter
+									with a direct message on twitter
+								</Link>{" "}
+								or just{" "}
+								<Link
+									href={DATA.email}
+									className='text-blue-500 hover:underline'>
+									Email
 								</Link>{" "}
 								.
 							</p>

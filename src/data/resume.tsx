@@ -14,7 +14,7 @@ export const DATA = {
 	resume: "https://www.portfolio.100xnavi.com",
 	description: "21-year-old tech enthusiast, seeking an SDE position.",
 	summary:
-		"A self-motivated final-year student from [Jind, Haryana](https://www.google.com/maps/place/Jind,+Haryana/@29.3132673,76.3203049,13z/data=!3m1!4b1!4m6!3m5!1s0x391204560fee9ac5:0xe427b9de50b77db0!8m2!3d29.325508!4d76.2997909!16zL20vMDk4MDhm?entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D) with coding expertise in C/C++, JavaScript, TypeScript, ReactJs, NodeJs, and SQL. Proficient in working with DevOps, Docker, AWS, and GitHub Actions. Skilled problem-solver with 450+ [LeetCode](https://www.leetcode.com/u/nxvtej) solutions and experience in cutting-edge technologies.",
+		"A self-motivated final-year student from [Jind, Haryana](https://www.google.com/maps/place/Jind,+Haryana/@29.3132673,76.3203049,13z/data=!3m1!4b1!4m6!3m5!1s0x391204560fee9ac5:0xe427b9de50b77db0!8m2!3d29.325508!4d76.2997909!16zL20vMDk4MDhm?entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D) with coding expertise in C/C++, Java, JavaScript, TypeScript, ReactJs, NodeJs, and SQL. Proficient in working with DevOps, Docker, AWS, and GitHub Actions. Skilled problem-solver with 500+ [LeetCode](https://www.leetcode.com/u/nxvtej) solutions and experience in cutting-edge technologies.",
 	avatarUrl: "/me.jpg",
 	skills: [
 		"C++",
@@ -99,15 +99,15 @@ export const DATA = {
 			school: "Chandigarh University",
 			href: "https://www.cuchd.in/",
 			degree: "Bachelor's Degree of Engineering (BE)",
-			logoUrl: "/chandigarh.png",
+			logoUrl: "https://i.postimg.cc/VLbV77WN/copy.jpg",
 			start: "2021",
-			end: "2024",
+			end: "2025",
 		},
 		{
 			school: "Indus Public School",
 			href: "#",
 			degree: "Science (Physics, Chemistry, Maths, Computer)",
-			logoUrl: "/",
+			logoUrl: "https://i.postimg.cc/yNKt3F98/download-3.jpg",
 			start: "2021",
 			end: "2019",
 		},
@@ -115,7 +115,7 @@ export const DATA = {
 			school: "Christ Raja Convent School",
 			href: "#",
 			degree: "High School",
-			logoUrl: "/",
+			logoUrl: "https://i.postimg.cc/FKxqy7gg/download-4.jpg",
 			start: "2018",
 			end: "2019",
 		},
@@ -181,7 +181,6 @@ export const DATA = {
 				},
 			],
 			image: "https://i.postimg.cc/fRypxS3w/image.png",
-			// video: "https://cdn.magicui.design/bento-grid.mp4",
 		},
 		{
 			title: "DDoS attacking NEET Exam Result",
@@ -199,7 +198,6 @@ export const DATA = {
 				},
 			],
 			image: "https://i.postimg.cc/vHqSH80C/ddos.jpg",
-			// video: "https://cdn.llm.report/openai-demo.mp4",
 		},
 		{
 			title: "Youtube Crawler",
@@ -233,15 +231,47 @@ export const DATA = {
 
 	certificates: [
 		{
-			title: "Postman API Fundamentals Student Expert ",
-			dates: "October 9th - 11th, 2024",
-			location: "Postman",
-			description:
-				"Developed a trading algorithm which trades stocks based on averages using pinescript.",
-			image:
-				"https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-western.png",
-			mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
-			links: [],
+			title: "Postman API Fundamentals Student Expert",
+			dates: "October 2024",
+			provider: "Postman",
+			description: "",
+			image: "https://i.postimg.cc/tCLLp04P/download-2.png",
+		},
+
+		{
+			title: "Front-End Developer Professional Certificate",
+			dates: "August 2024",
+			provider: "Meta",
+			description: "",
+			image: "https://i.postimg.cc/rwx7phDH/images-2.png",
+		},
+		{
+			title: "Developing Back-End Apps with Node.js and Express",
+			dates: "August 2024",
+			provider: "IBM",
+			description: "",
+			image: "https://i.postimg.cc/25Fp0HmW/ibm.jpg",
+		},
+		{
+			title: "Full Stack Web Development",
+			dates: "July 2024",
+			provider: "100xdev",
+			description: "",
+			image: "https://i.postimg.cc/0QcTsbz2/download-1.jpg",
+		},
+		{
+			title: "Algorithmic Toolbox",
+			dates: "June 2024",
+			provider: "UC San Diego",
+			description: "",
+			image: "https://i.postimg.cc/Vvh2Jp9x/download-1.png",
+		},
+		{
+			title: "Java as a Second Language Specialization",
+			dates: "January 2024",
+			provider: "Coursera",
+			description: "",
+			image: "https://i.postimg.cc/2j9s9Lp0/download-2.jpg",
 		},
 	],
 } as const;

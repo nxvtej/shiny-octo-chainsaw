@@ -6,9 +6,8 @@ import Link from "next/link";
 
 interface Props {
 	title: string;
-	description: string;
 	dates: string;
-	location: string;
+	provider: string;
 	image?: string;
 	links?: readonly {
 		icon: React.ReactNode;
@@ -19,9 +18,8 @@ interface Props {
 
 export function CertificateCard({
 	title,
-	description,
 	dates,
-	location,
+	provider,
 	image,
 	links,
 }: Props) {
@@ -38,13 +36,8 @@ export function CertificateCard({
 					<time className='text-xs text-muted-foreground'>{dates}</time>
 				)}
 				<h2 className='font-semibold leading-none'>{title}</h2>
-				{location && (
-					<p className='text-sm text-muted-foreground'>{location}</p>
-				)}
-				{description && (
-					<span className='prose dark:prose-invert text-sm text-muted-foreground'>
-						{description}
-					</span>
+				{provider && (
+					<p className='text-sm text-muted-foreground'>{provider}</p>
 				)}
 			</div>
 			{links && links.length > 0 && (
