@@ -245,7 +245,6 @@ export default function Page() {
 										provider={project.provider}
 										dates={project.dates}
 										image={project.image}
-										links={project.links}
 									/>
 								</BlurFade>
 							))}
