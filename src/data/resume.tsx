@@ -38,6 +38,13 @@ export const DATA = {
 		email: "nxvtej@gmail.com",
 		tel: "+917988672006",
 		social: {
+			Brain: {
+				name: "Rag",
+				url: "https://rag.100xnavi.com",
+				icon: Icons.brain,
+
+				navbar: true,
+			},
 			GitHub: {
 				name: "GitHub",
 				url: "https://github.com/nxvtej",
