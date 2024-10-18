@@ -31,7 +31,7 @@ export const DATA = {
 	],
 	navbar: [
 		{ href: "/", icon: HomeIcon, label: "Home" },
-		{ href: "/blog", icon: NotebookIcon, label: "Blog" },
+		{ href: "/rag", icon: Icons.brain, label: "Rag Model" },
 	],
 	email:
 		"mailto:nxvtej@gmail.com?subject=Contact%20via%20Portfolio&body=Hello,%20I%20would%20like%20to%20connect%20with%20you.",
@@ -39,13 +39,6 @@ export const DATA = {
 		email: "nxvtej@gmail.com",
 		tel: "+917988672006",
 		social: {
-			Brain: {
-				name: "Rag",
-				url: "https://rag.100xnavi.com",
-				icon: Icons.brain,
-
-				navbar: true,
-			},
 			GitHub: {
 				name: "GitHub",
 				url: "https://github.com/nxvtej",
@@ -99,7 +92,7 @@ export const DATA = {
 			start: "January 2024",
 			end: "Present",
 			description:
-				"I’ve solved 450+ LeetCode problems, focusing on algorithms like dynamic programming and backtracking, using C++ and Java. I’ve earned the 100 Days Badge for consistent practice and maintain a contest rating of 1427, participating in coding competitions to sharpen my skills.",
+				"I’ve solved 500+ LeetCode problems, focusing on algorithms like dynamic programming and backtracking, using C++ and Java. I’ve earned the 100 Days Badge for consistent practice and maintain a contest rating of 1427, participating in coding competitions to sharpen my skills.",
 		},
 	],
 	education: [

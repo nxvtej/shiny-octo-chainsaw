@@ -7,6 +7,8 @@ import { DATA } from "@/data/resume";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
+//ip address of user will go to google serever cause of accessing google font
+// in eu its illegal
 import "./globals.css";
 
 const fontSans = FontSans({
@@ -44,6 +46,10 @@ export const metadata: Metadata = {
 		title: `${DATA.name}`,
 		card: "summary_large_image",
 	},
+
+	// github: {
+
+	// },
 	verification: {
 		google: "",
 		yandex: "",
