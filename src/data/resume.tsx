@@ -11,8 +11,9 @@ export const DATA = {
 	locationLink: "https://www.google.com/maps/place/india",
 	timeZone: "Asia/Kolkata",
 	localCode: "en-IN",
-	resume: "https://www.portfolio.100xnavi.com",
-	description: "21-year-old tech enthusiast, seeking an SDE position.",
+	resume:
+		"https://drive.google.com/file/d/1ixWFHGKqOb58H79CYlt1hE7YehdnbbZ6/view?usp=sharing",
+	description: "Checkout my awesome portfolio",
 	summary:
 		"A self-motivated final-year student from [Jind, Haryana](https://www.google.com/maps/place/Jind,+Haryana/@29.3132673,76.3203049,13z/data=!3m1!4b1!4m6!3m5!1s0x391204560fee9ac5:0xe427b9de50b77db0!8m2!3d29.325508!4d76.2997909!16zL20vMDk4MDhm?entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D) with coding expertise in C/C++, Java, JavaScript, TypeScript, ReactJs, NodeJs, and SQL. Proficient in working with DevOps, Docker, AWS, and GitHub Actions. Skilled problem-solver with 500+ [LeetCode](https://www.leetcode.com/u/nxvtej) solutions and experience in cutting-edge technologies.",
 	avatarUrl: "/me.jpg",
