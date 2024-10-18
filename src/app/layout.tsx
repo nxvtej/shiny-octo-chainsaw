@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 		default: DATA.name,
 		template: `%s - portfolio`, //for title of child pages
 	},
-	description: DATA.description,
+	description: "Checkout my awesome portfolio",
 	openGraph: {
 		title: `${DATA.name}`,
 		description: DATA.description,
@@ -62,7 +62,7 @@ export default function RootLayout({
 					"min-h-screen bg-background font-sans antialiased max-w-2xl mx-auto py-12 sm:py-24 px-6",
 					fontSans.variable
 				)}>
-				<ThemeProvider attribute='class' defaultTheme='light'>
+				<ThemeProvider attribute='class' defaultTheme='dark'>
 					<TooltipProvider delayDuration={0}>
 						{children}
 						<Navbar />
