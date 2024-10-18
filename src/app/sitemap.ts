@@ -6,13 +6,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
         {
             url: url,
             lastModified: new Date(),
-            changeFrequency: 'yearly',
+            changeFrequency: 'weekly',
             priority: 1,
         },
         {
             url: `${url}/rag`,
             lastModified: new Date(),
-            changeFrequency: 'monthly',
+            changeFrequency: 'daily',
             priority: 0.8,
         },
 
