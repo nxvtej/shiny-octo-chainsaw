@@ -19,7 +19,7 @@ const fontSans = FontSans({
 export const metadata: Metadata = {
 	metadataBase: new URL(DATA.url),
 	title: {
-		default: DATA.name,
+		default: "Navdeep's Portfolio",
 		template: `%s - portfolio`, //for title of child pages
 	},
 	description: "Checkout my awesome portfolio",
