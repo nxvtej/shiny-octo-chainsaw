@@ -24,7 +24,6 @@ export const DATA = {
 		"Next.js",
 		"Typescript",
 		"Node.js",
-		"Python",
 		"Postgres",
 		"Docker",
 		"AWS",
