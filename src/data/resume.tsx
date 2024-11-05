@@ -15,7 +15,7 @@ export const DATA = {
 		"https://vercel-100xnavi.s3.ap-southeast-2.amazonaws.com/dev+resume+word.pdf",
 	description: "Tech-savvy 21-year-old developer.",
 	summary:
-		"A self-motivated final-year student from [Jind, Haryana](https://www.google.com/maps/place/Jind,+Haryana/@29.3132673,76.3203049,13z/data=!3m1!4b1!4m6!3m5!1s0x391204560fee9ac5:0xe427b9de50b77db0!8m2!3d29.325508!4d76.2997909!16zL20vMDk4MDhm?entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D) with coding expertise in C++, Java, and TypeScript. Proficient in DevOps, Docker, AWS, and GitHub Actions, with a competitive coding rating of 1700+ and strong problem-solving skills in advanced technologies.",
+		"A self-motivated final-year student from [Jind, Haryana](https://www.google.com/maps/place/Jind,+Haryana/@29.3132673,76.3203049,13z/data=!3m1!4b1!4m6!3m5!1s0x391204560fee9ac5:0xe427b9de50b77db0!8m2!3d29.325508!4d76.2997909!16zL20vMDk4MDhm?entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D) with coding expertise in C++, Java, and TypeScript. Proficient in DevOps, Docker, AWS, and GitHub Actions, with a competitive coding rating of [1700+] and strong problem-solving skills in advanced technologies.",
 	avatarUrl: "/me.jpg",
 	skills: [
 		"C++",
@@ -92,7 +92,7 @@ export const DATA = {
 			start: "January 2024",
 			end: "Present",
 			description:
-				"I’ve solved 550+ LeetCode problems, focusing on algorithms like dynamic programming and backtracking, using C++ and Java. I’ve earned the 100 Days Badge for consistent practice and maintain a contest rating of 1700+, participating in coding competitions to sharpen my skills.",
+				"I’ve solved 550+ LeetCode problems, focusing on algorithms like dynamic programming and backtracking, using C++ and Java. I’ve earned the 100 Days Badge for consistent practice and maintain a contest rating of [1700+], participating in coding competitions to sharpen my skills.",
 		},
 	],
 	education: [
