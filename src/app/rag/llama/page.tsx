@@ -15,6 +15,7 @@ export default function LLama() {
 	const [response, setResponse] = useState("...");
 	const [loading, setLoading] = useState(false);
 	const [back, setBack] = useState(false);
+	const [disable, setDisable] = useState(true);
 	const [placeholder, setPlaceholder] = useState(
 		"Demo Prompt: How to play cricket? (in 50 words)"
 	);
@@ -26,6 +27,12 @@ export default function LLama() {
 		prompt: prompt,
 	});
 
+	const clearclickHandler = async () => {
+		setDisable(true);
+		setPrompt("");
+		setResponse("...");
+		setPlaceholder("...");
+	};
 	const clickHandler = async () => {
 		// console.log(url);
 		setLoading(true);
@@ -46,6 +53,7 @@ export default function LLama() {
 		} catch (error) {
 			console.error(error);
 		}
+		setDisable(false);
 		setLoading(false);
 	};
 
@@ -74,19 +82,29 @@ export default function LLama() {
 						}}
 					/>
 					<br />
-					<div className='flex space-x-2'>
-						<SpinnerButton
-							name='Hit BedRock'
-							state={loading}
-							onClick={clickHandler}></SpinnerButton>
-						{/* <Link href='https://100xnavi.com'>
+					<div className='flex justify-between'>
+						<div className='space-x-2'>
+							<SpinnerButton
+								name='Hit BedRock'
+								state={loading}
+								onClick={clickHandler}></SpinnerButton>
+							{/* <Link href='https://100xnavi.com'>
 							<SpinnerButton name='Go Back' state={back} />
 							</Link> */}
-						<SpinnerButton
-							name='Go Back'
-							state={back}
-							onClick={backclickHandler}
-						/>
+							<SpinnerButton
+								name='Go Back'
+								state={back}
+								onClick={backclickHandler}
+							/>
+						</div>
+						<div>
+							<SpinnerButton
+								variant={"secondary"}
+								disabled={disable}
+								name='Clear'
+								state={back}
+								onClick={clearclickHandler}></SpinnerButton>
+						</div>
 					</div>
 					{/* <SpinnerButton>Go back</SpinnerButton> */}
 				</div>
