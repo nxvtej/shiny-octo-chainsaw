@@ -11,12 +11,12 @@ import { Metadata } from "next";
 
 export default function LLama() {
 	const router = useRouter();
-	const [prompt, setPrompt] = useState("Name some cricketers");
+	const [prompt, setPrompt] = useState("How to play cricket? (in 50 words)");
 	const [response, setResponse] = useState("...");
 	const [loading, setLoading] = useState(false);
 	const [back, setBack] = useState(false);
 	const [placeholder, setPlaceholder] = useState(
-		"Demo Prompt: Name some cricketers"
+		"Demo Prompt: How to play cricket? (in 50 words)"
 	);
 	const url = process.env.NEXT_PUBLIC_APIROUTE;
 	if (!url) {
