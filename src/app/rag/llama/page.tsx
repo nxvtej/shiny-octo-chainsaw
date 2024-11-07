@@ -57,7 +57,7 @@ export default function LLama() {
 	};
 
 	const backclickHandler = async () => {
-		router.push("/");
+		router.push("/rag");
 	};
 	return (
 		<div className='flex flex-col mt-20 justify-center items-center'>

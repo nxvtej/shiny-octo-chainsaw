@@ -62,7 +62,7 @@ export default function Titan() {
 		// setPlaceholder("...");
 		// // redicet page to this url 100xnavi.com
 		// setBack(false);
-		router.push("/");
+		router.push("/rag");
 	};
 	return (
 		<div className='flex flex-col mt-20 justify-center items-center'>
