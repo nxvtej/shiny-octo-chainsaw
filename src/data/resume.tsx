@@ -59,7 +59,7 @@ export const DATA = {
 
 				navbar: true,
 			},
-			email: {
+			Email: {
 				name: "Send Email",
 				url: "mailto:nxvtej@gmail.com?subject=Contact%20via%20Portfolio&body=Hello,%20I%20would%20like%20to%20connect%20with%20you",
 				icon: Icons.email,
