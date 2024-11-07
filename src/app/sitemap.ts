@@ -12,14 +12,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
         {
             url: `${url}/rag`,
             lastModified: new Date(),
-            changeFrequency: 'daily',
+            changeFrequency: 'weekly',
             priority: 0.8,
         },
         {
             url: `${url}/rag/llama`,
             lastModified: new Date(),
-            changeFrequency: 'daily',
+            changeFrequency: 'weekly',
 
+        },
+        {
+            url: `${url}/rag/titan`,
+            lastModified: new Date(),
+            changeFrequency: 'weekly',
         }
 
     ]
