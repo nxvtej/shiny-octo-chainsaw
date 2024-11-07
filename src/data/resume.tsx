@@ -30,7 +30,7 @@ export const DATA = {
 	],
 	navbar: [
 		{ href: "/", icon: HomeIcon, label: "Home" },
-		{ href: "/rag/llama", icon: Icons.brain, label: "Rag Model" },
+		{ href: "/rag", icon: Icons.brain, label: "Rag Model" },
 	],
 	email:
 		"mailto:nxvtej@gmail.com?subject=Contact%20via%20Portfolio&body=Hello,%20I%20would%20like%20to%20connect%20with%20you.",

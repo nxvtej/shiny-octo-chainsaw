@@ -8,7 +8,7 @@ import { useState } from "react";
 import { SpinnerButton } from "@/components/ui/SpinnerButton";
 import { Textarea } from "@/components/ui/Textarea";
 
-export default function LLama() {
+export default function Titan() {
 	const router = useRouter();
 	const [prompt, setPrompt] = useState("How to play cricket? (in 50 words)");
 	const [response, setResponse] = useState("...");
@@ -57,13 +57,18 @@ export default function LLama() {
 	};
 
 	const backclickHandler = async () => {
+		// setBack(true);
+		// setResponse("...");
+		// setPlaceholder("...");
+		// // redicet page to this url 100xnavi.com
+		// setBack(false);
 		router.push("/");
 	};
 	return (
 		<div className='flex flex-col mt-20 justify-center items-center'>
 			<div>
 				<div className='text-slate-500 text-3xl  underline'>
-					<h1>Testing LLama-3.0</h1>
+					<h1>Testing Titan-V1.0</h1>
 				</div>
 				<span className=' pt-2 text-slate-500'>Enter Prompt</span>
 				<br />
