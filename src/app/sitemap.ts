@@ -25,6 +25,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
             url: `${url}/rag/titan`,
             lastModified: new Date(),
             changeFrequency: 'weekly',
+        },
+        {
+            url: `${url}/rag/mistral`,
+            lastModified: new Date(),
+            changeFrequency: 'weekly',
         }
 
     ]

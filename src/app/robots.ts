@@ -6,7 +6,7 @@ export default function robots(): MetadataRoute.Robots {
             {
                 // userAgent: 'Googlebot',
                 userAgent: '*',
-                allow: ['/', '/rag', '/rag/llama', '/rag/titan'],
+                allow: ['/', '/rag', '/rag/llama', '/rag/titan', '/rag/mistral'],
 
                 // completely exclude if want to sub exclude it then check some demo
                 disallow: '/private/',
