@@ -10,13 +10,13 @@ import { Textarea } from "@/components/ui/Textarea";
 
 export default function Mistral() {
 	const router = useRouter();
-	const [prompt, setPrompt] = useState("How to play cricket? (in 50 words)");
+	const [prompt, setPrompt] = useState("Mention names from the knowledge base");
 	const [response, setResponse] = useState("...");
 	const [loading, setLoading] = useState(false);
 	const [back, setBack] = useState(false);
 	const [disable, setDisable] = useState(true);
 	const [placeholder, setPlaceholder] = useState(
-		"Demo Prompt: How to play cricket? (in 50 words)"
+		"Demo Prompt: Mention names from the knowledge base"
 	);
 	const url = process.env.NEXT_PUBLIC_APIROUTE;
 	if (!url) {
