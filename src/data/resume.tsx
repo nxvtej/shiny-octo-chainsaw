@@ -122,6 +122,27 @@ export const DATA = {
 	],
 	projects: [
 		{
+			title: "Hosting Service",
+			href: "https://host.100xnavi.com/",
+			dates: "October 2024 - November 2024",
+			active: true,
+			description: "Created a React website hosting service.",
+			technologies: ["Next.js", "Typescript", "Aws", "Cloudflare"],
+			links: [
+				{
+					type: "Website",
+					href: "https://host.100xnavi.com/",
+					icon: <Icons.globe className='size-3' />,
+				},
+				{
+					type: "Source",
+					href: "https://github.com/nxvtej/vercel-v1-copyServer",
+					icon: <Icons.github className='size-3' />,
+				},
+			],
+			image: "https://i.postimg.cc/Y01vDfJg/web-hosting.jpg",
+		},
+		{
 			title: "Connect Pro",
 			href: "https://meet.100xnavi.com/",
 			dates: "July 2024 - Aug 2024",
