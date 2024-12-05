@@ -122,12 +122,12 @@ export const DATA = {
 	],
 	projects: [
 		{
-			title: "Hosting Service",
+			title: "Hosting Service (like Vercel)",
 			href: "https://host.100xnavi.com/",
 			dates: "October 2024 - November 2024",
 			active: true,
 			description: "Created a React website hosting service.",
-			technologies: ["Next.js", "Typescript", "Aws", "Cloudflare"],
+			technologies: ["Next.js", "Typescript", "Aws", "EC2", "Cloudflare"],
 			links: [
 				{
 					type: "Website",
@@ -141,6 +141,29 @@ export const DATA = {
 				},
 			],
 			image: "https://i.postimg.cc/Y01vDfJg/web-hosting.jpg",
+		},
+
+		{
+			title: "Rag Model",
+			href: "https://rag.100xnavi.com/",
+			dates: "Aug 2024 - Nov 2024",
+			active: true,
+			description:
+				"Developed a wrapper on Amazon [Bedrock](https://aws.amazon.com/bedrock/).",
+			technologies: ["Next.js", "Typescript", "AWS", "LLama", "Lambdas"],
+			links: [
+				{
+					type: "Website",
+					href: "https://rag.100xnavi.com/",
+					icon: <Icons.globe className='size-3' />,
+				},
+				{
+					type: "Source",
+					href: "https://github.com/nxvtej/llama3.0-cricket-data",
+					icon: <Icons.github className='size-3' />,
+				},
+			],
+			image: "https://i.postimg.cc/cJbs0Yct/demo.png",
 		},
 		{
 			title: "Connect Pro",
